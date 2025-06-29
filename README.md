@@ -128,11 +128,16 @@ gpiozero
 picamera2
 ```
 🧑‍💻 Author
+
 Priyanshi Singh
+
 B.Tech – JK Institute of Applied Physics and Technology
 University of Allahabad
+
 📍 India
+
 📧 spriyanshi180@.com
+
 🌐 www.linkedin.com/in/spriyanshi180
 
 📜 License
