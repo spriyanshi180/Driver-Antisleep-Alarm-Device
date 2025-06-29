@@ -52,14 +52,23 @@ Click to view sample demonstrations:
 
 ## 📁 Folder Structure
 Driver-Antisleep-Alarm/
+
 ├── drowsiness_detection.py
+
 ├── README.md
+
 ├── requirements.txt
+
 ├── Project_Report.pdf
+
 ├── images/
+
 │ ├── setup.jpg
+
 │ └── blink_demo.png
+
 ├── media/
+
 │ └── 2.mp4, 3.mp4, 4.mp4, 7.mp4
 
 
@@ -77,18 +86,18 @@ libcamera-vid -t 0 --width 640 --height 480 --inline --listen -o tcp://0.0.0.0:8
 This starts a TCP stream of the camera on port 8080.
 
 🖥 Terminal 2 – Run the Python Detection Script
-bash
-Copy
-Edit
+```bash
 cd ~/your_script_folder/
 source ~/drowsy-env/bin/activate     # Activate your virtual environment
 python3 drowsiness_detection.py
+```
+
 Make sure your Python code uses:
 
-python
-Copy
-Edit
+```bash
 cap = cv2.VideoCapture("tcp://127.0.0.1:8080", cv2.CAP_FFMPEG)
+```
+
 🧪 Features
 Real-time blink detection using Eye Aspect Ratio (EAR)
 
@@ -101,12 +110,15 @@ Suitable for both personal and commercial vehicles
 Offline system – no internet needed
 
 📦 Installation Requirements
+
 Install the necessary libraries with:
 
-
+```bash
 pip install -r requirements.txt
-requirements.txt content:
+```
 
+requirements.txt content:
+```bash
 opencv-python
 dlib
 imutils
@@ -114,6 +126,7 @@ numpy
 RPi.GPIO
 gpiozero
 picamera2
+```
 🧑‍💻 Author
 Priyanshi Singh
 B.Tech – JK Institute of Applied Physics and Technology
